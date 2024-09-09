@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Woker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pedido-form">
+        <h3>Adicionar Pedido</h3>
+        <label for="item">Lanches e bebidas:</label>
+        <select id="item">
+          <option value="Callback Burguer">Callback Burguer</option>
+          <option value="Null-Burguer">Null-Burguer</option>
+          <option value="Crispy Turing">Crispy Turing</option>
+          <option value="Mongo Melt">Mongo Melt</option>
+          <option value="Webwrap">Webwrap</option>
+          <option value="NPM Nuggets">NPM Nuggets</option>
+          <option value="Float Juice">Float Juice</option>
+          <option value="Array Apple">Array Apple</option>
+          <option value="Async Berry">Async Berry</option>
+        </select>
+
+        <label for="prioridade">Prioridade do pedido:</label>
+        <select id="prioridade">
+          <option value="normal">Normal</option>
+          <option value="alta">Alta</option>
+        </select>
+
+        <button id="adicionarPedido">Fazer pedido</button>
+      </div>
+
+      <div class="pedidos-container">
+        <div class="coluna">
+          <h3>Em Espera</h3>
+          <ul id="pedidosEspera"></ul>
+        </div>
+        <div class="coluna">
+          <h3>Fazendo</h3>
+          <ul id="pedidosFazendo"></ul>
+        </div>
+        <div class="coluna">
+          <h3>Completados</h3>
+          <ul id="pedidosCompletados"></ul>
+        </div>
+      </div>
+      <ul id="workersStatus"></ul>
+      <!-- META PARA O FUTURO -->
+      <!-- <div class="media-tempo">
+        <h3>Tempo Estimado Finalizar Pedidos:</h3>
+        <p id="tempoMedio">Calculando...</p>
+      </div> -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
